@@ -1,7 +1,7 @@
 version: '3.1'
 services:
   test-node-server:
-    image: test-ubuntu-node
+    image: test-ubuntu-jdk17-node
 
   test-node-agent:
     image: test-ubuntu-node
