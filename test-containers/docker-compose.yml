@@ -6,4 +6,4 @@ services:
 
   test-node-agent:
     image: test-puppet-agent-node
-    command: sleep infinity
+    command: /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
