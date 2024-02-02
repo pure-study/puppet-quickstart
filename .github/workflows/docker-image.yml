@@ -12,8 +12,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+
     - name: Build the Docker image
       run: |
         cd test-containers
         docker build . --file Dockerfile --tag my-image-name:latest
+
+    - name: Clean the Docker image  # to save spaces
+      run: |
         docker rmi my-image-name:latest
