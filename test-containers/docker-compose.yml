@@ -5,4 +5,5 @@ services:
     command: sleep infinity
 
   test-node-agent:
-    image: test-ubuntu-node
+    image: test-puppet-agent-node
+    command: sleep infinity
