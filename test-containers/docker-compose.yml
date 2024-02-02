@@ -2,6 +2,7 @@ version: '3.1'
 services:
   test-node-server:
     image: test-ubuntu-jdk17-node
+    command: sleep infinity
 
   test-node-agent:
     image: test-ubuntu-node
