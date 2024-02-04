@@ -21,4 +21,5 @@ nerdctl run --name apply-test puppet/puppet-agent apply -e 'file { "/tmp/adhoc":
 
 # Puppet development container
 nerdctl run -it --network puppet-net --platform linux/amd64 ghcr.io/betadots/pdc:latest puppet agent --test
+
 ```
