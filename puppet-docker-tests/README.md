@@ -8,7 +8,8 @@ nerdctl network create puppet
 nerdctl network ls
 nerdctl network rm puppet
 
-nerdctl run --net puppet --name puppet-server --hostname puppet-server ghcr.io/voxpupuli/container-puppetserver:8.4.0-latest
+# this one didn't work good, and didn't follow it up
+# nerdctl run --net puppet --name puppet-server --hostname puppet-server ghcr.io/voxpupuli/container-puppetserver:8.4.0-latest
 
 nerdctl compose up -d
 nerdctl compose down
