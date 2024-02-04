@@ -14,6 +14,7 @@ nerdctl network rm puppet
 nerdctl compose up -d
 nerdctl compose down
 
+nerdctl logs -f puppet-server-1
 nerdctl exec puppet-server-1 puppetserver ca generate --certname puppetboard
 
 nerdctl volume ls

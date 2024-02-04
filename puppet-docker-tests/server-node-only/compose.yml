@@ -17,6 +17,7 @@ services:
       - puppetserver:/opt/puppetlabs/server/data/puppetserver
       - puppetserver-ssl:/etc/puppetlabs/puppet/ssl
       - puppetserver-ca:/etc/puppetlabs/puppetserver/ca
+      - ./code/manifests:/etc/puppetlabs/code/environments/production/manifests
     restart: always
     ports:
       - 8140:8140
