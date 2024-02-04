@@ -86,7 +86,7 @@ services:
 
 networks:
   default:
-    name: crafty-oss
+    name: puppet-net
 
 volumes:
   puppetserver:

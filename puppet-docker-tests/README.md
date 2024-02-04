@@ -1,6 +1,6 @@
 # puppet-docker-tests
 
-Tests of the [blog](https://www.puppet.com/blog/puppet-docker).
+Tests of this [blog](https://www.puppet.com/blog/puppet-docker).
 
 Commands:
 ```shell
@@ -19,5 +19,6 @@ nerdctl volume ls
 
 nerdctl run --name apply-test puppet/puppet-agent apply -e 'file { "/tmp/adhoc": content => "Written by Puppet" }'
 
+# Puppet development container
 nerdctl run -it --network puppet-net --platform linux/amd64 ghcr.io/betadots/pdc:latest puppet agent --test
 ```
